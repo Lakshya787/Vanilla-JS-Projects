@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Typing Master</title>
+  <link rel="stylesheet" href="styles.css" />
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" href="favicon.ico">
+<link rel="manifest" href="site.webmanifest">
+
+</head>
+<body>
+  <div class="container">
+    <h1>Typing Master</h1>
+    <p class="subtitle">Test your speed. Beat your limits.</p>
+    <div class="settings">
+      <label>
+        Time (seconds):
+        <input id="time" type="number" placeholder="60" />
+      </label>
+      <button class="paste-btn">Paste Text</button>
+      <button class="start-btn">Start Test</button>
+    </div>
+    <div class="test-box">
+      <div class="text-display">
+        The quick brown fox jumps over the lazy dog. Practice makes progress.
+      </div>
+      <textarea
+        placeholder="Start typing here..."
+        disabled
+      ></textarea>
+    </div>
+    <div class="stats">
+      <div class="stat">
+        <span class="label">Time Left</span>
+        <span class="value" id="time_left">0s</span>
+      </div>
+      <div class="stat">
+        <span class="label">WPM</span>
+        <span class="value" id="wpm">0</span>
+      </div>
+      <div class="stat">
+        <span class="label">Accuracy</span>
+        <span class="value" id="acc">0%</span>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
